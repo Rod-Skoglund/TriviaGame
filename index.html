@@ -1,0 +1,67 @@
+<!-- **************************************** -->
+<!-- Class - Coding Bootcamp MW               -->
+<!-- Assignment #5 - Trivia Game              -->
+<!-- Author: Rod Skoglund                     -->
+<!-- File: Index.html                         -->
+<!-- **************************************** -->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rod's Trivia Game</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/app.js"></script>
+
+</head>
+
+<body>
+  <div id="game">
+
+    <div id="title-block">
+      Totally Trivial Trivia!
+    </div>
+
+    <!-- There are three sections below. Only one will be vsiable at any given point in time -->
+    <!-- start-active will only be displayed when oyu are at the start of a new game       -->
+    <div id="start-active"></div>
+
+    <!-- quetion-active will only be displayed when the timer is running and teh user is actively answering questions.       -->
+    <div id="timer-active">
+      <div id="timer">
+        Time Remaining: <span id="clock"></span> Seconds
+      </div>
+    </div>
+        
+    <!-- quetion-active will only be displayed when the timer is running and teh user is actively answering questions.       -->
+    <div id="question-active">
+        <div id="question"></div>
+              
+      <div id="answers"></div>
+    </div>
+
+    <!-- ansResult-active will only display when an answer is selected.                       -->
+    <!-- It will let the user know if the selected answer is correct or not.                  -->
+    <!-- If it incorrect, it will let the user know the correct answer.                       -->
+    <!-- This display will only be active for a short time and does not require a user action -->
+    <div id="ansResult-active">
+      <div id="answer-result"></div>
+      <div id="incorrect-ans">The Correct Answer was: <span id="correctAns"></span></div>
+      <div id="animated-GIF"></div>
+    </div>     
+
+    <!-- results-active will only be displayed when the timer runs and all questions          -->
+    <!-- have been presentedout and you want to display teh final results.                    -->
+    <div id="results-active">
+      <h2>All done, heres how you did!</h2>
+      <div>Correct Answers: <span id="correct-count"></span></div>
+      <div>Incorrect Answers: <span id="incorrect-count"></span></div>
+      <div>Unanswered: <span id="unanswered-count"></span></div>
+      <div id="startover"></div>
+    </div>
+
+  </div>
+
+</body>
+</html>
